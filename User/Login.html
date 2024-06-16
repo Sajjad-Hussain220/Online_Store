@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignInForm</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+
+<body>
+    <section class="SignUpForm">
+        <div class="image-container">
+            <img src="../images/SignIn-01.svg" alt="SignInForm_Image">
+        </div>
+        <div class="vertical-line"></div>
+        <div class="vertical-line-Mobile"></div>
+        <div class="form-container">
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <div class="input-container">
+                    <label for="password" id="password-label">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <img src="../images/HideIcon-01.svg" alt="Hide/Show Password" id="togglePassword">
+                </div>
+
+                <button type="submit">Sign In</button>
+
+                <div class="signin-link">
+                    <p>Create Account? <a href="Register.html">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+<script src="Login_Register.js"></script>
+<script src="Register.js"></script>
+</body>
+
+</html>

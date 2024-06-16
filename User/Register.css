@@ -1,0 +1,219 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.SignUpForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 100%;
+    width: 90%;
+    margin: 20px;
+}
+
+.image-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.image-container.animate {
+    width: 100%;
+}
+
+.image-container img.animate {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.form-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.SignUpForm form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.SignUpForm form.animate {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.SignUpForm label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.SignUpForm input,
+.SignUpForm select {
+    padding: 10px;
+    margin-bottom: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.SignUpForm button {
+    padding: 10px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f15513;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.SignUpForm button:hover {
+    background-color: #eb4b07;
+}
+
+.signin-link {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.signin-link p {
+    margin: 0;
+}
+
+.signin-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signin-link a:hover {
+    text-decoration: underline;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.input-container label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-container input {
+    width: 100%;
+    margin-bottom: 7px;
+    padding: 10px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.input-container img {
+    position: absolute;
+    top: 65%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.vertical-line {
+    display: none;
+}
+
+.vertical-line-Mobile {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .SignUpForm {
+        flex-direction: row;
+        width: 800px;
+    }
+
+    .vertical-line {
+        display: block;
+        height: auto;
+        width: 1px;
+        background-color: #ccc;
+        margin: 0 20px;
+        align-self: stretch;
+    }
+
+    .vertical-line-Mobile {
+        display: none;
+    }
+
+    .image-container {
+        width: 60%;
+    }
+
+    .form-container {
+        width: 40%;
+    }
+}
+
+@media (max-width: 767px) {
+    .vertical-line {
+        display: none;
+    }
+
+    .vertical-line-Mobile {
+        display: block;
+        height: 1px;
+        width: auto;
+        background-color: #ccc;
+        margin: 20px 0;
+        align-self: stretch;
+    }
+
+    .image-container img {
+        transform: translateY(100%);
+    }
+
+    .image-container img.animate {
+        transform: translateY(0);
+    }
+
+    .SignUpForm form {
+        transform: translateY(-100%);
+    }
+
+    .SignUpForm form.animate {
+        transform: translateY(0);
+    }
+}

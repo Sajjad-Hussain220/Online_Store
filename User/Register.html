@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUpForm</title>
+    <link rel="stylesheet" href="Register.css">
+</head>
+
+<body>
+    <section class="SignUpForm">
+        <div class="image-container">
+            <img src="../images/SignUp-01.svg" alt="SignUpForm_Image">
+        </div>
+        <div class="vertical-line"></div>
+        <div class="vertical-line-Mobile"></div>
+        <div class="form-container">
+            <form>
+                <label for="username">User Name:</label>
+                <input type="text" id="username" name="username" required autocomplete="off">
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required autocomplete="off">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <div class="input-container">
+                    <label for="password" id="password-label">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <img src="../images/HideIcon-01.svg" alt="Hide/Show Password" id="togglePassword">
+                </div>
+
+                <div class="input-container">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required autocomplete="off">
+                    <img src="../images/HideIcon-01.svg" alt="Hide/Show Password" id="toggleConPassword">
+                </div>
+
+
+                <button type="submit">Sign Up</button>
+
+                <div class="signin-link">
+                    <p>Already have an Account? <a href="./Login.html">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="Login_Register.js"></script>
+    <script src="Register.js"></script>
+</body>
+
+</html>
