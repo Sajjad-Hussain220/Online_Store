@@ -1,12 +1,14 @@
 body,
 html {
-    height: 100%;
+    height: auto;
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
+    padding: 20px 0; 
+    box-sizing: border-box;
     outline: none;
 }
 
@@ -26,7 +28,6 @@ input:focus {
     border-radius: 10px;
     max-width: 100%;
     width: 90%;
-    margin: 20px;
 }
 
 .image-container {
@@ -181,7 +182,7 @@ input:focus {
     .image-container {
         width: 60%;
     }
-
+ 
     .form-container {
         width: 40%;
     }
@@ -200,7 +201,6 @@ input:focus {
         margin: 20px 0;
         align-self: stretch;
     }
-
     .image-container img {
         transform: translateY(100%);
     }
